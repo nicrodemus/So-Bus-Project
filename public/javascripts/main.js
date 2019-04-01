@@ -187,11 +187,9 @@ function postfunc(e) {
   var location = searchBar[0].value;
   axios
     .post("https://interview.sobus.fr:8080/autocomplete/", {
-      params: {
-        key: "ImBuildingASearchBar",
-        locale: "fr",
-        term: location
-      }
+      key: "ImBuildingASearchBar",
+      locale: "fr",
+      term: location
     })
     .then(response =>
       console.log("POSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTS POST RESPONSE", response)
