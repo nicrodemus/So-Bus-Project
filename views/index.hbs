@@ -1,0 +1,54 @@
+<div class="formClass">
+    <div class="intro">
+        <h1>Book your bus tickets</h1>
+        <h3>Find the cheapest trip in England and in Europe</h3>
+    </div>
+    <form id="locationForm">
+        <div class="first_block">
+            <input class="searchBar" type="text" placeholder="from">
+            <input class="searchBar" type="text" placeholder="to">
+            <button id="reverse"><i class="fas fa-exchange-alt"></i></button>
+            <button class="info" id="btn"> INFO</button>
+        </div>
+        <div class="second_block">
+            <button type="button" class="numPassengers" id="d">+</button>
+            <input id="inpPassengers" type="text" readonly="readonly" placeholder="add passenger"
+                date-date-formate="yyyy-mm-dd">
+            <button type="button" class="numPassengers" id="e">-</button>
+        </div>
+        <div class="third_block">
+            <input name="dateInput" class="dateInput" type="text" placeholder="return" onfocus="(this.type='date')"
+                onfocusout="(this.type ='text')"></input>
+
+            <input name="dateInput" class="dateInput" type="text" placeholder="return" onfocus="(this.type='date')"
+                onfocusout="(this.type ='text')"></input>
+            <button type="button" id="post">research</button>
+    </form>
+
+</div>
+<section class="information">
+    <div id="infoFirst">
+        <div id="formatted-address"></div>
+        <div id="address-components"></div>
+        <div id="coordinate-components"></div>
+    </div>
+    <div id="infoSecond">
+        <div id="formatted-addressDest"></div>
+        <div id="address-componentsDest"></div>
+        <div id="coordinate-componentsDest"></div>
+    </div>
+
+</section>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoDBXFaIh8pew0NtdoPFt75-T3kw3vsO0
+&libraries=places"></script>
+
+<script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>

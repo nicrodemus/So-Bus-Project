@@ -1,0 +1,305 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  width: 100%;
+  height: 100%;
+}
+
+.formClass {
+  background-image: url("/images/travel.jpg");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-top: 100px;
+  width: 100%;
+}
+.intro {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.information {
+  height: 100px;
+  width: 60%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#infoFirst,
+#infoSecond {
+  min-width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h3 {
+  color: white;
+}
+a {
+  color: #00b7ff;
+}
+#locationForm {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 0;
+}
+input {
+  height: 60px;
+  margin-right: 0;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+input:focus,
+button:focus {
+  outline: 0;
+}
+button {
+  font-size: 15px;
+  border: none;
+}
+#d {
+  position: relative;
+  left: 30px;
+}
+#e {
+  position: relative;
+  right: 30px;
+}
+#inpPassengers {
+  width: 200px;
+}
+#post {
+  background-color: #4c9ff5;
+  color: white;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+}
+#reverse {
+  position: relative;
+  right: 235px;
+}
+.info {
+  background-color: #17a2b8;
+  color: white;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  width: 80px;
+}
+.searchBar {
+  position: relative;
+  left: 29px;
+}
+.first_block {
+  position: relative;
+  left: 26px;
+}
+.third_block {
+  position: relative;
+  right: 26px;
+}
+#reverse {
+  position: relative;
+  background-color: #00b7ff;
+  border-radius: 25px;
+  border: none;
+  right: 185px;
+}
+
+@media (max-width: 1200px) {
+  .formClass {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-top: 200px;
+    padding-left: 120px;
+    padding-right: 110px;
+    height: 800px;
+  }
+  #locationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* border: 3px solid black; */
+    width: 900px;
+    height: 500px;
+    padding: 0;
+  }
+
+  .first_block,
+  .second_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+
+    margin-bottom: 50px;
+  }
+  .third_block {
+    width: 800px;
+    position: relative;
+    left: 50px;
+  }
+  .first_block {
+    display: flex;
+    justify-content: center;
+  }
+  .second_block {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 25px;
+  }
+  #inpPassengers {
+    width: 800px;
+  }
+  .searchBar {
+    width: 350px;
+  }
+  .dateInput {
+    width: 350px;
+  }
+  #reverse {
+    position: relative;
+    right: 330px;
+  }
+}
+
+@media (max-width: 990px) {
+  .formClass {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 200px;
+    padding-left: 100px;
+    height: 800px;
+  }
+  #locationForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 100px;
+  }
+  #reverse {
+    position: relative;
+    right: 330px;
+  }
+}
+@media (max-width: 800px) {
+  .formClass {
+    background-image: url("/images/travel2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  #locationForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .first_block {
+    max-width: 600px;
+
+    padding-left: 10px;
+  }
+
+  .second_block,
+  .third_block {
+    max-width: 70%;
+  }
+  .dateInput {
+    max-width: 230px;
+  }
+  #reverse {
+    position: relative;
+    right: 220px;
+  }
+}
+@media (max-width: 550px) {
+  .intro {
+    min-width: 390px;
+    padding-left: 50px;
+  }
+  .formClass {
+    border: 1px solid black;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    padding-right: 180px;
+  }
+  #locationForm {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .first_block {
+    max-width: 510px;
+    position: relative;
+    right: 100px;
+    padding-right: 100px;
+  }
+  .searchBar {
+    width: 170px;
+    margin-left: 0;
+  }
+  .second_block {
+    max-width: 450px;
+    padding-right: 100px;
+
+    padding-left: 40px;
+  }
+  #inpPassengers {
+    min-width: 400px;
+  }
+  .third_block {
+    max-width: 510px;
+    padding-right: 100px;
+  }
+  #reverse {
+    position: relative;
+    left: -160px;
+  }
+  i {
+    position: relative;
+    right: 0px;
+  }
+  .dateInput {
+    width: 168px;
+  }
+  #post {
+    width: 70px;
+  }
+  .info {
+    width: 70px;
+  }
+}
