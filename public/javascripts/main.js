@@ -185,14 +185,28 @@ function reverseInput2(el) {
 function postfunc(e) {
   e.preventDefault();
   var location = searchBar[0].value;
+  var destination = searchBar[1].value;
   axios
-    .post("https://interview.sobus.fr:8080/autocomplete/", {
-      key: "ImBuildingASearchBar",
-      locale: "fr",
-      term: location
-    })
-    .then(response =>
-      console.log("POSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTS POST RESPONSE", response)
+    .all([
+      axios.post("https://interview.sobus.fr:8080/autocomplete/", {
+        key: "ImBuildingASearchBar",
+        locale: "fr",
+        term: location
+      }),
+      axios.post("https://interview.sobus.fr:8080/autocomplete/", {
+        key: "ImBuildingASearchBar",
+        locale: "fr",
+        term: destination
+      })
+    ])
+    .then(
+      axios.spread((responseLoc, responseDest) => {
+        console.log(
+          "POSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTS POST RESPONSE",
+          responseLoc,
+          responseDest
+        );
+      })
     )
-    .catch(err => console.log("EROROROROROROROROROOROROOROROROROOR POST", err));
+    .catch(err => console.log("ERRRORORORO", err));
 }
