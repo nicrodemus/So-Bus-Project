@@ -4,6 +4,9 @@ body {
   width: 100%;
   height: 100%;
 }
+a {
+  cursor: pointer;
+}
 
 .formClass {
   background-image: url("/images/travel.jpg");
@@ -136,7 +139,7 @@ button {
     overflow-x: hidden;
     padding-top: 200px;
     padding-left: 120px;
-    padding-right: 110px;
+    padding-right: 200px;
     height: 800px;
   }
   #locationForm {
@@ -150,12 +153,18 @@ button {
     padding: 0;
   }
 
+  .first_block {
+    width: 800px;
+  }
+  .second_block {
+    width: 850px;
+    padding-left: 30px;
+  }
   .first_block,
   .second_block {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 800px;
 
     margin-bottom: 50px;
   }
@@ -163,6 +172,8 @@ button {
     width: 800px;
     position: relative;
     left: 50px;
+
+    padding-left: 8px;
   }
   .first_block {
     display: flex;
@@ -186,6 +197,9 @@ button {
   #reverse {
     position: relative;
     right: 330px;
+  }
+  .information {
+    display: none;
   }
 }
 
@@ -221,27 +235,46 @@ button {
     overflow-x: hidden;
   }
   #locationForm {
+    padding-left: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .intro {
+    min-width: 480px;
+  }
+  .intro > h1 {
+    font-size: 30px;
+  }
+  .intro > h3 {
+    font-size: 20px;
+  }
   .first_block {
     max-width: 600px;
 
     padding-left: 10px;
   }
 
-  .second_block,
   .third_block {
-    max-width: 70%;
+    max-width: 100%;
+
+    padding-left: 70px;
+  }
+  .second_block {
+    max-width: 91%;
+
+    padding-left: 38px;
   }
   .dateInput {
-    max-width: 230px;
+    max-width: 244px;
   }
   #reverse {
     position: relative;
-    right: 220px;
+    right: 235px;
+  }
+  h1,
+  h3 {
+    margin-left: 50px;
   }
 }
 @media (max-width: 550px) {
@@ -250,17 +283,17 @@ button {
     padding-left: 50px;
   }
   .formClass {
-    border: 1px solid black;
     max-width: 100%;
     overflow-x: hidden;
 
     padding-right: 180px;
   }
   #locationForm {
-    max-width: 400px;
+    max-width: 600px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+
+    padding-right: 180px;
   }
   .first_block {
     max-width: 510px;
@@ -274,20 +307,28 @@ button {
   }
   .second_block {
     max-width: 450px;
-    padding-right: 100px;
+    padding-right: 200px;
 
-    padding-left: 40px;
+    padding-left: 140px;
   }
   #inpPassengers {
     min-width: 400px;
   }
   .third_block {
-    max-width: 510px;
-    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+
+    max-width: 500px;
+    padding-right: 300px;
+    padding-left: 0;
+
+    max-height: 60px;
   }
   #reverse {
     position: relative;
     left: -160px;
+  }
+  .intro {
   }
   i {
     position: relative;
@@ -301,5 +342,54 @@ button {
   }
   .info {
     width: 70px;
+  }
+}
+@media (max-width: 470px) {
+  .formClass {
+    padding-top: 80px;
+  }
+  .first_block {
+    width: 360px;
+    padding-left: 145px;
+  }
+  .searchBar {
+    max-width: 110px;
+  }
+  #reverse {
+    position: relative;
+    left: 79px;
+    border-radius: 10px;
+    border: none;
+  }
+  .second_block {
+    margin-top: 40px;
+    width: 300px;
+    padding-left: 190px;
+    padding-right: 80px;
+  }
+  #inpPassengers {
+    min-width: 300px;
+  }
+  .third_block {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    max-width: 340px;
+
+    padding-left: 55px;
+  }
+  .dateInput {
+    max-width: 115px;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 13px;
+    margin-left: 30px;
+    width: 300px;
+    border: hidden;
   }
 }
