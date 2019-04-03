@@ -181,7 +181,7 @@ function reverseInput2(el) {
     reverseInput1();
   };
 }
-/// function post to SoBus API ///doesn't work
+/// function post to SoBus API ///
 function postfunc(e) {
   e.preventDefault();
   var location = searchBar[0].value;
