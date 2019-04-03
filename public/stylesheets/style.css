@@ -328,9 +328,7 @@ button {
     position: relative;
     left: -160px;
   }
-  .intro {
-    border: 1px solid black;
-  }
+
   i {
     position: relative;
     right: 0px;
