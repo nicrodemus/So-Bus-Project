@@ -347,26 +347,34 @@ button {
   .formClass {
     padding-top: 80px;
   }
+  #locationForm {
+    padding-right: 170px;
+    padding-left: 95px;
+  }
   .first_block {
-    width: 360px;
-    padding-left: 145px;
+    width: 380px;
+    padding-left: 120px;
   }
   .searchBar {
-    max-width: 110px;
+    min-width: 150px;
     font-size: 11px;
+  }
+  .info {
+    display: none;
   }
   #reverse {
     position: relative;
-    left: 77px;
-    border-radius: 5px;
+    left: -135px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
     border: none;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
   }
   .second_block {
     margin-top: 40px;
-    width: 300px;
-    padding-left: 190px;
+    max-width: 300px;
+    padding-left: 130px;
     padding-right: 80px;
   }
   #inpPassengers {
@@ -379,21 +387,24 @@ button {
     flex-direction: row;
     max-width: 340px;
 
-    padding-left: 60px;
+    padding-left: 20px;
   }
   .dateInput {
     max-width: 118px;
     font-size: 11px;
   }
+  .intro {
+    padding-right: 200px;
+    padding-left: 40px;
+  }
   h1 {
+    width: 200px;
     font-size: 20px;
-    font-weight: bold;
   }
 
   h3 {
     font-size: 13px;
     margin-left: 30px;
     width: 300px;
-    border: hidden;
   }
 }
