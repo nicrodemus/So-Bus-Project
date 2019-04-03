@@ -353,6 +353,7 @@ button {
   }
   .searchBar {
     max-width: 110px;
+    font-size: 11px;
   }
   #reverse {
     position: relative;
@@ -370,6 +371,7 @@ button {
   }
   #inpPassengers {
     min-width: 300px;
+    font-size: 11px;
   }
   .third_block {
     margin-top: 40px;
@@ -377,10 +379,11 @@ button {
     flex-direction: row;
     max-width: 340px;
 
-    padding-left: 55px;
+    padding-left: 60px;
   }
   .dateInput {
-    max-width: 115px;
+    max-width: 118px;
+    font-size: 11px;
   }
   h1 {
     font-size: 20px;
