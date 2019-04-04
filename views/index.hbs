@@ -5,8 +5,8 @@
     </div>
     <form id="locationForm">
         <div class="first_block">
-            <input class="searchBar" type="text" placeholder="from">
-            <input class="searchBar" type="text" placeholder="to">
+            <input class="searchBar" id="searchBarFirst" type="text" placeholder="from">
+            <input class="searchBar" id="searchBarSecond" type="text" placeholder="to">
             <button id="reverse"><i class="fas fa-exchange-alt"></i></button>
             <button class="info" id="btn"> INFO</button>
         </div>
@@ -16,10 +16,10 @@
             <button type="button" class="numPassengers" id="e">-</button>
         </div>
         <div class="third_block">
-            <input name="dateInput" class="dateInput" type="text" placeholder="departure" onfocus="(this.type='date')"
+            <input name="dateInput"  class="dateInput" id="dateInputFirst" type="text" placeholder="departure" onfocus="(this.type='date')"
                 onfocusout="(this.type ='text')"></input>
 
-            <input name="dateInput" class="dateInput" type="text" placeholder="return" onfocus="(this.type='date')"
+            <input name="dateInput" class="dateInput" id="dateInputSecond" type="text" placeholder="return" onfocus="(this.type='date')"
                 onfocusout="(this.type ='text')"></input>
             <button type="button" id="post">research</button>
     </form>
