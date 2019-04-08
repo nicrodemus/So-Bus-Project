@@ -12,7 +12,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
 var passport = require("passport");
 require("./passport/passport-set-up");
-var app = express();
+
 mongoose
   .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
   .then(x => {
@@ -28,10 +28,8 @@ const app_name = require("./package.json").name;
 const debug = require("debug")(
   `${app_name}:${path.basename(__filename).split(".")[0]}`
 );
-// view engine setup
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "hbs");
 
+const app = express();
 app.use(logger("dev"));
 //app.use(express.json());
 app.use(bodyParser.json());
@@ -39,7 +37,6 @@ app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
 
 app.listen(process.env.port || 3000);
 console.log("Running at Port 3000");
@@ -62,20 +59,21 @@ app.use((req, res, next) => {
 
   next();
 });
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
+// view engine setup
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "hbs");
+app.use(express.static(path.join(__dirname, "public")));
+// app.use(function(err, req, res, next) {
+//   // set locals, only providing error in development
+//   res.locals.message = err.message;
+//   res.locals.error = req.app.get("env") === "development" ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render("error");
-});
+//   // render the error page
+//   res.status(err.status || 500);
+//   res.render("error");
+// });
 var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
+// var usersRouter = require("./routes/users");
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+
 module.exports = app;

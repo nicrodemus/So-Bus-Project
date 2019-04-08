@@ -32,17 +32,19 @@ router.post("/process-login", (req, res, next) => {
   User.findOne({ eMail: { $eq: eMail } })
     .then(userDoc => {
       if (!userDoc) {
-        res.redirect("/signup");
-      } else {
-        req.logIn(userDoc, () => {
-          res.redirect("/");
-        });
+        next(new Error("Incorrect email. 🤦‍♂️"));
+        return;
       }
+      //   } else {
+      //     req.logIn(userDoc, () => {
+      //       res.redirect("/");
+      //     });
+      //   }
       const { encryptedPassword } = userDoc;
       if (!bcrypt.compareSync(originalPassword, encryptedPassword)) {
-        res.redirect("/signup");
+        next(new Error("Incorrect password. 🤯"));
       } else {
-        req.login(userDoc, () => {
+        req.logIn(userDoc, () => {
           res.redirect("/");
         });
       }
