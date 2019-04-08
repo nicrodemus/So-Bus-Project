@@ -1,6 +1,10 @@
 <div class="formClass">
     <div class="intro">
+        {{#if currentUser}}
+        <h1>Welcome back {{currentUser.preNom}}</h1>
+        {{else}}
         <h1>Book your bus tickets</h1>
+        {{/if}}
         <h3>Find the cheapest trip in England and in Europe</h3>
     </div>
     <form id="locationForm">
@@ -16,11 +20,11 @@
             <button type="button" class="numPassengers" id="e">-</button>
         </div>
         <div class="third_block">
-            <input name="dateInput"  class="dateInput" id="dateInputFirst" type="text" placeholder="departure" onfocus="(this.type='date')"
-                onfocusout="(this.type ='text')"></input>
+            <input name="dateInput" class="dateInput" id="dateInputFirst" type="text" placeholder="departure"
+                onfocus="(this.type='date')" onfocusout="(this.type ='text')"></input>
 
-            <input name="dateInput" class="dateInput" id="dateInputSecond" type="text" placeholder="return" onfocus="(this.type='date')"
-                onfocusout="(this.type ='text')"></input>
+            <input name="dateInput" class="dateInput" id="dateInputSecond" type="text" placeholder="return"
+                onfocus="(this.type='date')" onfocusout="(this.type ='text')"></input>
             <button type="button" id="post">research</button>
     </form>
 

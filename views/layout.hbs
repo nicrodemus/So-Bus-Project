@@ -36,10 +36,38 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">About</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Contact</a>
+            {{#if currentUser}}
+            <a id="LogOut" href="/logout" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Log out</a></li>
+          {{else}}
+          <a id="openerLogIn" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Log In</a></li>
+
+          <li id="signIn" class="nav-item mx-0 mx-lg-1">
+            <div class="login-form" id="login">
+              <div class="emailForm">
+                <form action="/process-login" method="POST">
+                  <label>
+                    Email:
+                    <input class="inputBar" type="email" name="eMail" placeholder="gfcgk@rfgh.com">
+              </div>
+              </label>
+              <div class="passwordForm">
+                <label>Password:
+                  <input type="password" class="inputBar" name="originalPassword" placeholder="it's a secret">
+                </label>
+              </div>
+              <div class="button-or-sign"><button class="btnLog">Log In</button>
+                <a href="/signup">Sign Up</a>
+              </div>
+
+              </form>
+
+            </div>
           </li>
-        </ul>
       </div>
+
+      {{/if}}
+      </ul>
+    </div>
     </div>
   </nav>
 

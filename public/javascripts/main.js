@@ -8,7 +8,7 @@ btn.addEventListener("click", geocode);
 btn.addEventListener("click", geocodeDestination);
 reverseBtn.addEventListener("click", reverseInput1);
 postBtn.addEventListener("click", postfunc);
-
+var openerLogIn = document.querySelector("#openerLogIn");
 //function addPassengers
 var incremen = 0;
 numPassengersBtn.forEach(function(el) {
@@ -210,3 +210,12 @@ function postfunc(e) {
     )
     .catch(err => console.log("ERRRORORORO", err));
 }
+// Sign up section
+openerLogIn.onclick = function() {
+  var div = document.getElementById("signIn");
+  if (div.style.display !== "none") {
+    div.style.display = "none";
+  } else {
+    div.style.display = "flex";
+  }
+};

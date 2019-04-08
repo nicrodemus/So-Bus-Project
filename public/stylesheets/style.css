@@ -119,9 +119,9 @@ button {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-#dateInputFirst{
+#dateInputFirst {
   border-right-style: solid;
-  border-right-color:#00b7ff;
+  border-right-color: #00b7ff;
 }
 .info {
   background-color: #17a2b8;
@@ -150,16 +150,19 @@ button {
   border: none;
   right: 185px;
 }
-#post{
+#post {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
 @media (max-width: 1200px) {
-  .intro{
-    
-    margin-left:50px;
-    min-width:664px;
+  #LogOut,
+  #openerLogIn {
+    display: none;
+  }
+  .intro {
+    margin-left: 50px;
+    min-width: 664px;
   }
   .formClass {
     max-width: 100%;
@@ -215,12 +218,12 @@ button {
   #inpPassengers {
     width: 800px;
   }
-  #inpPassengers{
+  #inpPassengers {
     border-radius: 5px;
   }
-  #dateInputFirst{
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+  #dateInputFirst {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   .searchBar {
     width: 350px;
@@ -230,10 +233,10 @@ button {
   }
   #reverse {
     position: relative;
-    top:18px;
+    top: 18px;
     right: 330px;
-    width:25px;
-    height:25px;
+    width: 25px;
+    height: 25px;
   }
   .information {
     display: none;
@@ -241,13 +244,17 @@ button {
 }
 
 @media (max-width: 990px) {
+  #signIn {
+    position: relative;
+    right: 20px;
+  }
   .formClass {
     max-width: 100%;
     overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 300px;
     padding-left: 100px;
     height: 800px;
   }
@@ -261,16 +268,16 @@ button {
     position: relative;
     right: 330px;
   }
-  .info{
+  .info {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  #inpPassengers{
+  #inpPassengers {
     border-radius: 5px;
   }
-  #dateInputFirst{
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+  #dateInputFirst {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 }
 @media (max-width: 900px) {
@@ -316,9 +323,9 @@ button {
   .dateInput {
     max-width: 244px;
   }
-  #dateInputFirst{
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+  #dateInputFirst {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   #reverse {
     position: relative;
@@ -329,34 +336,33 @@ button {
     margin-left: 50px;
   }
 }
+
 @media (max-width: 600px) {
   .intro {
-    position:relative;
-    bottom:40px;
+    position: relative;
+    bottom: 40px;
     min-width: 530px;
     padding-right: 10px;
   }
-  .intro > h1{
+  .intro > h1 {
     font-size: 25px;
   }
-  .intro > h3{
-    font-size:18px;
+  .intro > h3 {
+    font-size: 18px;
   }
   .formClass {
-
-   
     max-width: 100%;
     overflow-x: hidden;
 
     padding-right: 180px;
   }
   #locationForm {
-    position:relative;
+    position: relative;
     bottom: 60px;
     max-width: 600px;
     display: flex;
     flex-wrap: wrap;
-    padding-left:90px;
+    padding-left: 90px;
     padding-right: 210px;
   }
   .first_block {
@@ -364,44 +370,42 @@ button {
     position: relative;
     right: 100px;
     padding-right: 80px;
-    
-    padding-left:15px;
+
+    padding-left: 15px;
   }
   .searchBar {
     width: 230px;
     margin-left: 0;
   }
-  #searchBarSecond{
-    border-top-right-radius:5px;
-    border-bottom-right-radius:5px;
+  #searchBarSecond {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   .second_block {
     max-width: 450px;
     padding-right: 200px;
-   
+
     padding-left: 165px;
   }
   #inpPassengers {
     min-width: 390px;
-    border-radius:5px;
-    border:none;
-
+    border-radius: 5px;
+    border: none;
   }
-  .info{
-    display:none;
+  .info {
+    display: none;
   }
   .third_block {
     display: flex;
     flex-direction: row;
-   
+
     max-width: 500px;
     padding-right: 300px;
-    padding-left: 15px;;
+    padding-left: 15px;
 
     max-height: 60px;
   }
   #reverse {
-    
     position: relative;
     left: -177px;
   }
@@ -413,9 +417,9 @@ button {
   .dateInput {
     width: 159px;
   }
-  #dateInputFirst{
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
+  #dateInputFirst {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
   #post {
     width: 70px;
@@ -435,8 +439,8 @@ button {
   .first_block {
     width: 350px;
     padding-left: 55px;
-   
-    padding-right:0px;
+
+    padding-right: 0px;
   }
   .searchBar {
     min-width: 150px;
@@ -455,7 +459,6 @@ button {
     border: none;
   }
   .second_block {
-   
     margin-top: 40px;
     max-width: 300px;
     padding-left: 130px;
@@ -466,7 +469,6 @@ button {
     font-size: 11px;
   }
   .third_block {
-   
     margin-top: 40px;
     display: flex;
     flex-direction: row;
@@ -479,23 +481,102 @@ button {
     font-size: 11px;
   }
   .intro {
-   
-    padding-top:50px;
+    padding-top: 50px;
     padding-right: 80px;
     padding-left: 40px;
   }
-   .intro > h1 {
-   
+  .intro > h1 {
     width: 300px;
     font-size: 20px;
-    padding-left:20px;
+    padding-left: 20px;
   }
 
- .intro> h3 {
-   padding-left:35px;
-  
+  .intro > h3 {
+    padding-left: 35px;
+
     font-size: 14px;
     margin-left: 30px;
     width: 330px;
   }
+}
+/* sign in styles*/
+
+#signIn {
+  display: flex;
+  flex-direction: row;
+
+  width: 700px;
+  height: 50px;
+}
+.login-form {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+}
+.button-or-sign {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 12px;
+}
+.btnLog {
+  background-color: #17a2b8;
+  height: 20px;
+  border-radius: 10px;
+}
+.inputBar {
+  height: 25px;
+  border-radius: 10px;
+}
+.emailForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 11px;
+
+  width: 400px;
+}
+.passwordForm {
+  width: 430px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 11px;
+}
+.button-or-sign > a {
+  padding-top: 2px;
+  text-decoration: none;
+}
+.sign-upSection {
+  background-color: #00b7ff;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  height: 100%;
+}
+.sign-up-structure {
+  height: 60%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.div-form {
+  margin-top: 15px;
+}
+.class-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input {
+  width: 400px;
+  border-radius: 10px;
+}
+#sign {
+  margin-top: 20px;
+  border-radius: 10px;
 }
