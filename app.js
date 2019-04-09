@@ -14,7 +14,7 @@ var passport = require("passport");
 require("./passport/passport-set-up");
 
 mongoose
-  .connect("mongodb://localhost:27017/booking-project", {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true
   })
   .then(x => {
