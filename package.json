@@ -4,7 +4,7 @@
   "main": "app.js",
   "private": true,
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./bin/www",
     "dev": "DEBUG=booking-project:* nodemon ./bin/www",
     "dev-windows": "nodemon ./bin/www"
   },

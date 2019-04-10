@@ -23,7 +23,7 @@ mongoose
   .catch(err => {
     console.error("Error connecting to mongo", err);
   });
-
+MONGODB_URI = "mongodb://localhost/booking-projects";
 const app_name = require("./package.json").name;
 const debug = require("debug")(
   `${app_name}:${path.basename(__filename).split(".")[0]}`
@@ -37,8 +37,8 @@ app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.listen(process.env.port || 3000);
-console.log("Running at Port 3000");
+app.listen(process.env.port || 4000);
+console.log("Running at Port 4000");
 // catch 404 and forward to error handler
 // catch 404 and forward to error handler
 
