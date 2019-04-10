@@ -12,7 +12,7 @@
     "start-dev": "nodemon ./bin/www"
   },
   "dependencies": {
-    "bcrypt": "^3.0.5",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "connect-mongo": "^2.0.3",
     "cookie-parser": "~1.4.3",
