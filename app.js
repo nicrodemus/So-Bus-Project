@@ -49,7 +49,7 @@ app.use(
 
     secret: "eXUW6iJ6=2h}yBC36P^;MmJ+fpYiU8A[Mg2KNRAj?D",
 
-    store: new MongoStore({ mongooseConnection: mongoose.connection })
+    store: new MongoStore({ url: process.env.MONGODB_URI })
   })
 );
 app.use(passport.initialize());
