@@ -15,7 +15,8 @@ router.post("/process-signup", (req, res, next) => {
     res.redirect("/signup");
     return;
   }
-  const encryptedPassword = bcrypt.hashSync(originalPassword, 10);
+  var salt = bcrypt.genSaltSync(10);
+  const encryptedPassword = bcrypt.hashSync(originalPassword, salt);
   User.create({
     preNom,
     nom,
