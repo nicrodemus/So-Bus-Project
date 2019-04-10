@@ -30,5 +30,16 @@
   "devDependencies": {
     "foreman": "^3.0.1",
     "nodemon": "^1.12.1"
-  }
+  },
+  "description": "copy of So Bus website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicrodemus/So-Bus-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicrodemus/So-Bus-Project/issues"
+  },
+  "homepage": "https://github.com/nicrodemus/So-Bus-Project#readme"
 }
